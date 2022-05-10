@@ -1,5 +1,114 @@
-<html>
-<body>
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Jardim Eterno - Suculentas e Cactos - JE</title>
+		<meta charset="utf-8"/>
+		<meta name="author" content="Priscila Cruz" />
+		<meta name="keywords" content="Jardim, Suculentas, Cactos, plantas" />
+		<meta name="description" content="Comércio de plantas suculentas e cactos" />
+		<link rel="stylesheet" type="text/css" href="estilo.css" />
 
-<\body>
-<\html>
+	</head>
+	<body>
+		
+		<nav>
+			<a class="a-menu" href="#"> HOME </a>
+			<a class="a-menu" href="#pag-Jardim Eterno"> SOBRE </a>
+			<a class="a-menu" href="#pag-Produtos"> PRODUTOS </a>
+			<a class="a-menu" href="#pag-Encomendas"> ENCOMENDAS </a>
+		</nav>
+		
+		<header>
+			<img src="imagens/jardimeterno.png" alt="banner contendo a imagem da loja virtual da Jardim Eterno" />
+		</header>
+		
+		<article>
+			<h1 id="pag-Jardim Eterno">Jardim Eterno</h1>
+			<p>Referência no mercado há mais de 25 anos a Agroflores se consolidou no ramo de flores, plantas e acessórios para jardinagem, eventos e decoração.</p>
+			<p> Com o compromisso de entregar uma experiência atrelada a compra de flores e plantas, construímos nossa história, tendo como diferenciais a credibilidade em oferecer as melhores opções do mercado e um serviço personalizado.</p>
+			<p> Nossas instalações foram pensadas para proporcionar aos clientes uma experiência única pelo universo das flores, plantas, artigos de decoração e acessórios.</p>
+			<p> Dispomos de uma equipe especializada de floristas para planejar e executar o seu projeto, de acordo com as suas necessidades.</p>
+			<p> Diretamente de Holambra recebemos semanalmente produtos de primeira qualidade, os quais procuramos honrar com um exclusivo atendimento.</p>
+		</article>	
+		
+		<section id="pag-Produtos" />
+			<h2>Produtos</h2>
+		
+			<p>Somos especialistas quando o assunto é flores e plantas, e claro que os acessórios não poderiam deixar de acompanhar as nossas estrelas principais. Confira abaixo nossos produtos.</p>
+
+			<div id="container" onload="condicional()">
+
+				<div class="card">
+					<img src="imagens/produto1.png" alt="produto1" />
+					<div class="card-content">
+						<h3>Em espiral</h3>
+						<p>R$ 39,99</p>
+					</div>
+				</div>
+				<div class="card">
+					<img src="imagens/produto2.png" alt="produto2" />
+					<div class="card-content">
+						<h3>Vaso de tecido</h3>
+						<p>R$ 49,99</p>
+					</div>
+				</div>
+				<div class="card">
+					<img src="imagens/produto3.png" alt="produto3" />
+					<div class="card-content">
+						<h3>Vaso de cerâmica</h3>
+						<p>R$ 29,99</p>
+					</div>
+				</div>
+				<div class="card">
+					<img src="imagens/produto4.png" alt="produto4" />
+					<div class="card-content">
+						<h3>Conjunto</h3>
+						<p>R$ 89,99</p>
+					</div>
+				</div>
+			</div>
+
+	
+			<section id="pag-Encomendas" />
+			<h2>Encomendas</h2>
+			<p>Faça a sua encomenda com a gente!</p>
+				<form name="" method="" action="">
+					<label for="nome">Nome:</label>
+					<input id="nome" type="text" name="nome_completo" size="120" placeholder="Nome completo" required />
+
+					<label for="email">E-mail:</label>
+					<input id="email" type="email" name="email" size="120" placeholder="nome@email.com" />
+
+					<label for="produto">Produto:</label>
+					<select id="produto" name="produto" placeholder="Selecione">
+						<option value="Selecione">Selecione</option>
+						<option value="produto1">Produto 1</option>
+						<option value="produto2">Produto 2</option>
+						<option value="produto3">Produto 3</option>
+						<option value="produto4">Produto 4</option>
+					</select>
+
+					<label for="quantidade">Quantidade:</label>
+					<input id="senha" type="number" name="Quantidade" size="120" placeholder="Somente números" min="1" max="100" step="1" />
+					
+					<fieldset>
+						<legend>Forma de retirada</legend>
+						<input id="del" type="radio" name="formaderetirada" value="del" for="del" /> <label>Delivery</label><br/>
+						<input id="tec" type="radio" name="formaderetirada" value="tec" for="tec" /> <label>Retirar no local</label>
+					</fieldset>
+					
+					<label>Comentários:</label><br/>
+					<textarea id="msg" cols="110" rows="4">
+					</textarea>
+					<div id="botoes-form">
+						<input type="submit" name="bnt-encomendar" value="ENCOMENDAR" />
+						<input type="reset" name="btn-cancelar" value="CANCELAR" />
+					</div>
+				</form>
+			
+			</section>
+			<footer>
+				<p>Desenvolvido por <a href="https://www.youtube.com/channel/UCadY1gPffhAMXi3IKK7_JQQ/featured" target="_blank">Jardim Eterno</a> - 2022</p>
+			</footer>
+	</body>
+</html>
